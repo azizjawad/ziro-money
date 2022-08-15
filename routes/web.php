@@ -13,9 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'App\Http\Controllers\Controller@home_page')->name('home');
+Route::get('/about-us', 'App\Http\Controllers\Controller@about_us_page')->name('about-us');
+Route::get('/services', 'App\Http\Controllers\Controller@services_page')->name('services');
+Route::get('/service-details', 'App\Http\Controllers\Controller@service_detail_page')->name('service-details');
+Route::get('/contact', 'App\Http\Controllers\Controller@contact_page')->name('contact');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

@@ -83,31 +83,15 @@
                 <div class="main-menu__nav">
                     <ul class="main-menu__list">
                         <li class="dropdown">
-                            <a href="index.html">Home</a>
-                            <ul>
-                                <li> <a href="index.html">Home One</a> </li>
-                                <li><a href="index2.html">Home Two</a></li>
-                                <li><a href="index3.html">Home Three</a></li>
-                                <li class="dropdown">
-                                    <a href="#">Header Styles</a>
-                                    <ul>
-                                        <li><a href="index.html">Header One</a></li>
-                                        <li><a href="index2.html">Header Two</a></li>
-                                        <li><a href="index3.html">Header Three</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+                            <a href="{{ route('home') }}">Home</a>
                         </li>
                         <li>
-                            <a href="about.html">About</a>
+                            <a href="{{ route('about-us') }}">About</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('services')  }}">Services</a>
                         </li>
 
-                        <li class="dropdown"><a href="services.html">Services</a>
-                            <ul>
-                                <li><a href="services.html">Services 01</a></li>
-                                <li><a href="services-details.html">Service Details</a></li>
-                            </ul>
-                        </li>
                         <li class="dropdown"><a href="#">Pages</a>
                             <ul>
                                 <li><a href="our-team.html">Team</a></li>
@@ -129,13 +113,8 @@
                                 <li><a href="monthly-loan-calculator.html">Monthly Calculator</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown"><a href="blog.html">News</a>
-                            <ul>
-                                <li><a href="blog.html">News</a></li>
-                                <li><a href="blog-details.html">News Details</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html">Contact</a></li>
+
+                        <li><a href="{{ route('contact')  }}">Contact</a></li>
                     </ul>
                 </div><!-- /.main-menu__nav -->
                 <div class="main-menu__right">
